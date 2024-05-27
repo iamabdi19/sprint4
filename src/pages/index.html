@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurkLingo - Home</title>
+    <!-- Internal CSS stylesheets -->
+    <link rel="stylesheet" href="../styles/home.css">
+    <!-- External CSS stylesheets -->
+    <link href="../jquery/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="../exterior/whatsapp-chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">TurkLingo</a></div>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <h1>Welcome to TurkLingo!</h1>
+            <p>Your journey to learning Turkish language as a foreigner begins here. Discover engaging courses tailored to your needs. Embrace the Turkish culture with our expert guidance.</p>
+            <a href="courses.html" class="btn">Explore Courses</a>
+        </section>
+        <!-- About section -->
+        <section class="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to offering comprehensive Turkish language courses to foreigners in Turkey, facilitating a deeper understanding and appreciation of the Turkish culture.</p>
+            <a href="about.html" class="btn">Learn More About Us</a>
+        </section>
+        <!-- Featured Courses section -->
+        <section class="featured-courses">
+            <h2>Featured Courses</h2>
+            <!-- Slider for featured courses -->
+            <div class="slider-container">
+                <ul class="slick-slider">
+                    <li>
+                        <img src="../../assets/basic.jpg" alt="Basic Turkish Course">
+                        <h3>Basic Turkish</h3>
+                        <p>Learn the fundamentals of Turkish language.</p>
+                    </li>
+                    <li>
+                        <img src="../../assets/intermediate.jpg" alt="Intermediate Turkish Course">
+                        <h3>Intermediate Turkish</h3>
+                        <p>Build upon your basic knowledge with more complex structures.</p>
+                    </li>
+                    <li>
+                        <img src="../../assets/advanced.jpg" alt="Advanced Turkish Course">
+                        <h3>Advanced Turkish</h3>
+                        <p>Master the Turkish language and engage in fluent conversations.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Call to Action section -->
+        <section class="cta">
+            <h2>Ready to start learning?</h2>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </section>
+    </main>
+    <footer>
+        <!-- Copyright text -->
+        <div class="footer-text">
+            <p>© 2024 TurkLingo Language Institution. All rights reserved.</p>
+        </div>
+        <!-- Social media icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/iamabdi.19"><img src="../../icons/icons8-instagram.svg" alt="Instagram Icon" class="insta-icon"></a>
+            <a href="https://twitter.com/TheMaliLad"><img src="../../icons/icons8-twitter.svg" alt="Twitter Icon" class="twitter-icon"></a>
+        </div>
+    </footer>
+    <!-- Placeholder for WhatsApp chat -->
+    <div id="whatsapp-chat"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../scripts/home.js"></script>
+    <script src="../exterior/whatsapp-chat.js"></script>
+    
+    <!-- GetButton.io widget -->
+    <script>
+        (function () {
+            var options = {
+                whatsapp: "905414618366", // WhatsApp number
+                call_to_action: "Message us", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+</body>
+</html>
